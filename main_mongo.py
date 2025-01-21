@@ -8,7 +8,7 @@
 # COMMAND ----------
 
 def generate_config(origin, destiny, incremental_tables):
-    env = DatabricksHelper().get_environment().lower()
+    env = "env"
     conn_string = "mongodb://mongo-srv"
     conn_properties = {
         "db_name": origin
