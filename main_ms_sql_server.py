@@ -8,8 +8,8 @@
 # COMMAND ----------
 
 def generate_config(origin, destiny, incremental_tables):
-    env = DatabricksHelper().get_environment().lower()
-    jdbc_conn = "jdbc:sqlserver://mssqldb-dev-bse-1.database.windows.net:1433;encrypt=true;trustServerCertificate=true;loginTimeout=30;database="
+    env = "env"
+    jdbc_conn = "jdbc:sqlserver://database.windows.net:1433;encrypt=true;trustServerCertificate=true;loginTimeout=30;database="
     conn_string = f"{jdbc_conn}{origin}"
     conn_properties = {
         "user": "user",
